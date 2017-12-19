@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#FF8215">
+        <TextView
+            android:id="@+id/hg_quanguo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全国"
+            android:drawableRight="@drawable/xiangxia"
+            android:textSize="16sp"
+            android:textColor="#fff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="观众网"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"/>
+        <ImageView
+            android:id="@+id/hd_sousuo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sousuo"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"/>
+    </RelativeLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout_hd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="#f00"
+        app:tabPadding="5dp"
+        app:tabGravity="center">
+
+    </android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_hd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>
